@@ -1,0 +1,31 @@
+html {
+  background-image: url("../../images/bg-intro-desktop.png");
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container__info {
+  margin: 100px 100px 0px 50px;
+}
+
+.container__form {
+  margin: 0 50px 0 0;
+}
+
+.container__form--inputs {
+  padding: 30px;
+}
+
+.container__info h1 {
+  font-size: 4rem;
+  text-align: initial;
+}
+
+.container__info p {
+  text-align: initial;
+}

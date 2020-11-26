@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./src/styles/styles.css">
+  <link rel="stylesheet" href="./src/styles/desktop.css" media="(min-width: 1024px)">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -25,23 +26,27 @@
     </section>
     <section class="container__form">
       <section class="container__form--free">
-        <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        <button><span>Try it free 7 days</span> then $20/mo. thereafter</button>
       </section>
       <form class="container__form--inputs" action="">
         <label for="name">
-          <input type="text" placeholder="First Name" id="name">
+          <input class="inputs-details" type="text" placeholder="First Name" id="name">
+          <p class="styleParrafo">First name cannot be empty</p>
         </label>
         <label for="lastName">
-          <input type="text" placeholder="First Name" id="lastName">
+          <input class="inputs-details" type="text" placeholder="First Name" id="lastName">
+          <p class="styleParrafo">Last name cannot be empty</p>
         </label>
         <label for="email">
-          <input type="email" placeholder="Email Address" id="email">
+          <input class="inputs-details" type="email" placeholder="Email Address" id="email">
+          <p class="styleParrafo">Looks like this is not an email</p>
         </label>
         <label for="password">
-          <input type="password" placeholder="Password" id="password">
+          <input class="inputs-details" type="password" placeholder="Password" id="password">
+          <p class="styleParrafo">Password cannot be empty</p>
         </label>
-        <button>Claim your free trial</button>
-        <h4>By clicking the button, you are agreeing to our Terms and Services</h4>
+        <button id="buttonClaim">Claim your free trial</button>
+        <h4>By clicking the button, you are agreeing to our <span>Terms and Services</span></h4>
       </form>
     </section>
   </main>
@@ -54,5 +59,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="./src/js/index.js"></script>
 </body>
 </html>
